@@ -1,0 +1,39 @@
+Rate of increase of time with respect to the input size is known as Time Complexity 
+
+
+Usually the Time Complexity is denoted as "O("Here is the Complexity denoted")", this is called the "Big-Oh Notation"
+
+for i in range(1,6):
+   print("Sushant")
+   Here, first operation is checking that i < 6 or not, then second one is printing Sushant, then third is increment of the value of i by 1 #(i+=1)
+   so here, the loop runs 5 times, so total operation 5x3 = 15 but if we run it N times,
+   the time Complexity will be Nx3 = 3N 
+   But before we conclude that it's time Complexity is 3N, we will discuss the "rules used to calculate the time Complexity of any code":
+        1. Always calculate TC in terms of worst case(Highest possibilty of operations or traffic on a app/product)
+            
+            For example:- age = 90 (Best Case), age = 10(Worst Case)
+            if age >= 80:
+                print("Super Senior")
+
+            elif age >= 60 and < 80:
+                print("Senior")
+
+            elif age >= 24 and < 60:
+                print("Working")
+
+            elif age >= 16 and < 24:
+                print("Teen")
+
+            else: 
+                print("Baby")
+
+    Here, if we take 90 it will check and run through only one condition but whereas if we use 10 it will go run and through the conditions of the whole code till the last
+    that's why we use worst case for any code, cause we don't know what will the user give us as an input.
+
+        2. Avoid the constant values
+           N = 10^5
+           given TC = (8N^6 + 3N^2 + 23)
+           so if we solve TC = 8*10^30 + 3*10^10 + 23
+           But we ignore 23, 3*10^10 because 8*10^30 itself is a very big quantity and in comparison with these numbers, there will be no
+        3. Avoid the lower bounds
+
