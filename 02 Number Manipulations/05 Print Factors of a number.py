@@ -24,9 +24,9 @@ from math import isqrt
 num_1 = 36
 result_2 = []
 for i in range(1, int(isqrt(num_1))+1):
-    if num % i == 0:
+    if num_1 % i == 0:
         result_2.append(i)
-        if i != num // i:
-            result_2.append(num // i)
+        if i != num_1 // i:
+            result_2.append(num_1 // i)
 print(sorted(result_2))
 #TC = O(sqrt(n)) + O(n logn) and SC = O(k) where k is number of factors
