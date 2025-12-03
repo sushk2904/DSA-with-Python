@@ -12,7 +12,7 @@ print(result)
 
 #Better Solution 
 result_1 = []
-for i in range(1, num//2 +1):
+for i in range(1, num//2 +1): #We made the range floor division by 2 because if we take 36 it will just be divisble by numbers till 36/2 = 18 and only 36.
     if num % i == 0:
         result_1.append(i)
 result_1.append(num)   #Appending the number itself as it is also a factor
