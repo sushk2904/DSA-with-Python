@@ -1,9 +1,10 @@
 #Head Recursion
+#The job execution is done first and function is called after that
 
 #Tail Recursion
 
 
-# 1 to N Recursion 
+'''1 to N Recursion''' 
 #a) Head
 def Head_1toN_func(i, N):
     if i > N:
@@ -21,7 +22,7 @@ def Tail_1toN_func(N):
 Tail_1toN_func(4)
 
 
-#N to 1 Recursion
+'''N to 1 Recursion'''
 #a) Head
 def Nto1_Head_func(N):
     if N == 0:
