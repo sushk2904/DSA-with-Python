@@ -16,9 +16,10 @@ nums1 = [1,1,1,1,2,3,4,4,7,9,9,9,10]
 n1 = len(nums1)
 if n1 == 1:
     print("Count of unique elements",n1, "the new updated array is",nums1)
-i1 = 0
-j1 = i+1
-while n1>j1:
-    if nums[j1]!=nums[i1]:
-        i1+=1
-        nums1[i1], nums[j1] = nums[j1], nums1[i1]
+x = 0
+y = x+1
+while n1 > y:
+    if nums[y]!=nums[x]:
+        x+=1
+        nums1[x], nums[y] = nums[y], nums1[x]
+print("Count of unique elements",n1, "the new updated array is",nums1)
