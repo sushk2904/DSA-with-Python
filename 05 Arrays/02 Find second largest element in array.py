@@ -27,7 +27,7 @@ nums1 = [55,32,97,-55,45,32,88,21]
 n1 = len(nums1)
 largest1 = float("-inf")
 sec_largest1 = float("-inf")
-for i in range(0, n):
+for i in range(0, n1):
     if nums1[i]>largest1:
         largest1 = nums1[i]
 

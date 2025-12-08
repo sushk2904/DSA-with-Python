@@ -18,8 +18,9 @@ if n1 == 1:
     print("Count of unique elements",n1, "the new updated array is",nums1)
 x = 0
 y = x+1
-while n1 > y:
-    if nums[y]!=nums[x]:
+while y<n1:
+    if nums1[y]!=nums1[x]:
         x+=1
-        nums1[x], nums[y] = nums[y], nums1[x]
-print("Count of unique elements",n1, "the new updated array is",nums1)
+        nums1[x], nums1[y] = nums1[y], nums1[x]
+    y+=1
+print("Count of unique elements",x+1, "the new updated array is",nums1)
