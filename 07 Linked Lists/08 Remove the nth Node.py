@@ -19,4 +19,17 @@ while count < index_of_element_removal:
 
 temp.next = temp.next.next
 return head
+
+#Optimized Soln
+slow = head
+fast = head
+for i in range(0,n):
+    fast = fast.next
+if fast is None:
+    return head.next
+while fast.next is not None:
+    fast = fast.next
+    slow = slow.next
+slow.next = slow.next.next
+return head
     
