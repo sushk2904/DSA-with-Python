@@ -9,4 +9,4 @@ while num > 0:
 if n1 == result:
     print("The result is palindrome")
 else:
-    print("The result is not palindrome")
+    print("The result is not a palindrome number")
