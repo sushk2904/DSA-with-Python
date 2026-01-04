@@ -6,7 +6,7 @@ for i in range(0,n):
     for j in range(i,n):
         total = total + nums[j]
         maxm = max(maxm, total)
-print(maxm)
+print("the maximum subarray sum", maxm)
 
 #Optimal Solution/Kadane's Algo
 nums1=[-2,1,-3,4,-1,2,1,-5,4]
@@ -20,4 +20,4 @@ for i in range(0,n):
 
         total = 0
 
-print(maxm1)
+print("the maximum subarray sum using kadane's algo:", maxm1)
