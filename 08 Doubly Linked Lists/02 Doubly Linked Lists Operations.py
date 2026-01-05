@@ -13,7 +13,8 @@ This will create 3 different nodes and if we want to interconnect this:-
 n1.next = n2
 n2.prev = n1
 n2.next = n3
-n3.prev = n2"""
+n3.prev = n2
+"""
 
 class DoublyLinkedList:
     def __init__(self):
