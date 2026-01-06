@@ -38,6 +38,34 @@ class DoublyLinkedList:
         else:
             current = self.head
             while current:
-                current = current.next
+                current = current.next  #Doubt?
             current.next = new_node
             new_node.prev = current
+    
+    #3 Insert in between
+    def insert_at(self, val, position):
+        new_node = Node(val)
+        if position == 0:
+            self.insert_at_head(val)
+            return
+    
+        current = self.head
+        count = 0
+        while current and count < position - 1:
+            current = current.next
+            count+=1
+        
+        if current is None:
+            print("print out of bounds")
+        
+        new_node.next = current.next
+        new_node.prev = current
+        if current.next:
+            current.next.prev = new_node
+        current.next = new_node
+
+
+        #HW 
+        '''create for traverse(), delete_head(), delete_last(), delete_in_between()'''
+
+
