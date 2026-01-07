@@ -1,3 +1,4 @@
+#Brute forced solution
 def reverse_dll(self,val):
     head = [5,3,2,1,9]
     temp = self.head
@@ -10,4 +11,5 @@ def reverse_dll(self,val):
         e = my_stack.pop()
         temp.val = e
         temp = temp.next
-        
+
+#Optimized Solution
