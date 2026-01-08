@@ -8,4 +8,8 @@ for i in range(0,n):
     else:
         maxm_cons =  max(cons, maxm_cons)
         cons = 0
-print(max(maxm_cons, cons))  #Why max again? Because what if there are 6 1's in the end, they will never go to the else part since no zeros are there to break the loop. 
+print(max(maxm_cons, cons))  
+'''Why max again? Because what if there are 
+6 1's in the end, they will never go to the 
+else part since no zeros are there to break the loop 
+and that's why we do this find out the max at the last'''
