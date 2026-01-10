@@ -18,3 +18,7 @@ def convert2decimal(x:str)->int:
     index = len(x)-1
     while index >= 0:
         num = int(x[index])*(2)
+
+
+
+#AND Gate 
