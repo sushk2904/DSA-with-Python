@@ -9,3 +9,12 @@ def convert2binary(num:int)->str:
         else:
             result+="0"
         num//2
+    result = result [::-1]
+
+def convert2decimal(x:str)->int:
+
+    decimal_number = 0
+    power = 0
+    index = len(x)-1
+    while index >= 0:
+        num = int(x[index])*(2)
