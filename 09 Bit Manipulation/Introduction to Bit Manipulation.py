@@ -22,3 +22,5 @@ def convert2decimal(x:str)->int:
 
 
 #AND Gate 
+
+#OR gate 
