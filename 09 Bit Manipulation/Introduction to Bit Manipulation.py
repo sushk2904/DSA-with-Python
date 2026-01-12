@@ -22,7 +22,11 @@ def convert2decimal(x:str)->int:
 
 
 #AND Gate 
+'''and gate gives true only if both are true
+and false if one is false'''
 
 #OR gate 
+'''or gate gives false only if both are false
+and true if one is true'''
 
 #XOR Gate 
