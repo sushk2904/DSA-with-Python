@@ -10,3 +10,5 @@ for i in range(0,n):
 for k,u in freq.items():
         if u==1:
 return k
+
+#I might quit soon from this seeing the growth of the Ai :- this is the only commit for today
