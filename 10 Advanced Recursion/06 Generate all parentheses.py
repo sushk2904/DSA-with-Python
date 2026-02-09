@@ -1,18 +1,20 @@
-class Solution(object):
-    def generateParenthesis(self, n):
-    
-        res = []
+brackets = [""]*(n*2)
+def solve(index, total, brackets, result):
+    if index>=len(brackets):
+        if total == 0:
+            result.append("".join(brackets))
+        return
+    if total > len(brackets)//2:
+        return
+    elif total <0:
+        return
+    brackets[index]="("
+    sum = total +1
+    solve(index+1, sum)
 
-        def backtrack(curr, open_cnt, close_cnt):
-            if len(curr) == 2 * n:
-                res.append(curr)
-                return
+    brackets[index]=")"
+    sum = total - 1
+    solve(index+1, sum)
 
-            if open_cnt < n:
-                backtrack(curr + "(", open_cnt + 1, close_cnt)
-
-            if close_cnt < open_cnt:
-                backtrack(curr + ")", open_cnt, close_cnt + 1)
-
-        backtrack("", 0, 0)
-        return res
+    #TC = O(2**n)
+    #SC = O(2N) and this 2N is stack space
