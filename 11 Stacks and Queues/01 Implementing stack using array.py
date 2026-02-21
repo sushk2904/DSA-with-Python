@@ -5,6 +5,9 @@ class Stack:
     def __str__(self):
         """Returns a string representation of the stack contents."""
         return str(self.items)
+    """def __repr__(self):
+        Returns a more detailed string representation, useful for debugging(try using this)
+        return f"<Stack: {self.items}>"""""
     
     def is_empty(self):
         return len(self.items) == 0

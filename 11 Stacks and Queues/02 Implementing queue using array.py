@@ -3,7 +3,7 @@ class Queue:
     def __init__(self):
         self.items = []
     
-    def __repr__(self):
+    def __str__(self):
         return self.items
 
     def is_empty(self):
