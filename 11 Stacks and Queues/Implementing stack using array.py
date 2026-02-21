@@ -2,6 +2,10 @@ class Stack:
     def __init__(self):
         self.items = []
     
+    def __str__(self):
+        """Returns a string representation of the stack contents."""
+        return str(self.items)
+    
     def is_empty(self):
         return len(self.items) == 0
     
