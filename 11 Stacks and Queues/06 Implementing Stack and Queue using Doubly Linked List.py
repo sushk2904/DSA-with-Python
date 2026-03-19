@@ -52,3 +52,46 @@ class StackDLL:
             print(temp.data, end=" -> ")
             temp = temp.next
         print("None")
+
+class QueueDLL:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+
+    def enqueue(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = self.tail = new_node
+            return
+
+        self.tail.next = new_node
+        new_node.prev = self.tail
+        self.tail = new_node
+
+    def dequeue(self):
+        if self.head is None:
+            print("Queue Underflow")
+            return None
+
+        value = self.head.data
+
+        if self.head == self.tail:
+            self.head = self.tail = None
+        else:
+            self.head = self.head.next
+            self.head.prev = None
+
+        return value
+
+    def peek(self):
+        if self.head:
+            return self.head.data
+        return None
+
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" <- ")
+            temp = temp.next
+        print("None")
