@@ -95,3 +95,5 @@ class QueueDLL:
             print(temp.data, end=" <- ")
             temp = temp.next
         print("None")
+
+#Now we have to do the questions especially the one of Bracket one on Leetcode 
