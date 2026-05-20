@@ -14,10 +14,10 @@ n= len(nums)
 maxm1 = float("-inf")
 total1 = 0
 for i in range(0,n):
-    total = total + nums[i]
+    total1 = total1 + nums[i]
     maxm1 = max(total, maxm1)
-    if total < 0:
+    if total1 < 0:
 
-        total = 0
+        total1 = 0
 
 print("the maximum subarray sum using kadane's algo:", maxm1)
