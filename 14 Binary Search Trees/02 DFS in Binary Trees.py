@@ -32,5 +32,3 @@ def preorder_traversal(node):
     preorder_traversal(node.left)
 
 preorder_traversal(five)
-
-#TC = O(N) and SC = O(H)
