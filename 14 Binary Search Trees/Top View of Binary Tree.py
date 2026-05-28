@@ -34,4 +34,4 @@ class Solution:
         for key in sorted(top_nodes):
             result.append(top_nodes[key])
 
-        return result
+        print(result)
