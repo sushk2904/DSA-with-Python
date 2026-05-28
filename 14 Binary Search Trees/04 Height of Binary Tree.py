@@ -11,5 +11,5 @@ class Solution:
         # Find right subtree height
         right = self.maxDepth(root.right)
 
-        # Return maximum height
-        return max(left, right) 
+        # Return maximum height + 1
+        return max(left, right) + 1
