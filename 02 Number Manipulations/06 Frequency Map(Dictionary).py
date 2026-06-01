@@ -8,6 +8,8 @@ for i in range(0, len(nums)): #TC = O(n)
         freq_map[nums[i]] = 1  #TC = O(1)
 
 print(freq_map)
+
+#We will have to revise the .get function cause i can't figure out the .get function
 #Overall TC = O(n) + O(1) + O(1) = O(n)
 #SC = O(n) since in worst case all elements are distinct and we have to store all elements in dictionary
 
