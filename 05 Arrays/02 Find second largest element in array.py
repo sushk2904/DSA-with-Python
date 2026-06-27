@@ -46,7 +46,7 @@ for i in range(0,n2):
     if nums2[i]>largest2:
         sec_largest2 = largest2
         largest2 = nums2[i]
-    elif nums2[i]>sec_largest2 and nums2 != largest2:
+    elif nums2[i]>sec_largest2 and nums2[i] != largest2:
         sec_largest2 = nums2[i]
 print("second largest is", sec_largest2)
 
