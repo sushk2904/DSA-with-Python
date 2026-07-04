@@ -30,3 +30,4 @@ for i in range(1, int(isqrt(num_1))+1):
             result_2.append(num_1 // i)
 print(sorted(result_2))
 #TC = O(sqrt(n)) + O(n logn) and SC = O(k) where k is number of factors
+#I've to revise this shit again
