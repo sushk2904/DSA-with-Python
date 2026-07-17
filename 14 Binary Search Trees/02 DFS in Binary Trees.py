@@ -32,3 +32,13 @@ def preorder_traversal(node):
     preorder_traversal(node.left)
 
 preorder_traversal(five)
+
+def postorder_traversal(node):
+    if node ==  None:
+        return 
+    
+    preorder_traversal(node.right)
+    preorder_traversal(node.left)
+    print(node.val, end = "")
+
+postorder_traversal(five)
