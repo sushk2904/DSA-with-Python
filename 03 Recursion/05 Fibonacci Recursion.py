@@ -1,9 +1,11 @@
-def FibSer(FibSum,i, n):
-    if i<=n:
-        print(FibSum)
-    FibSer(FibSum+i,i+n,n-1)
+def FibSer(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    return FibSer(n-1) + FibSer(n-2)
 
-FibSer(0,0,5)
+print(FibSer(6))
 
       
     
