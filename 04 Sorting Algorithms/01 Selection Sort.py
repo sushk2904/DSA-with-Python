@@ -7,7 +7,8 @@ for i in range(0, n):
     for j in range(i+1, n) :
         if nums[j] < nums[min_index] :
             min_index = j
-
-    nums[i], nums[min_index] = nums[min_index], nums[i]
+    
+    if min_index != i:
+        nums[i], nums[min_index] = nums[min_index], nums[i]
 
 print(nums)
