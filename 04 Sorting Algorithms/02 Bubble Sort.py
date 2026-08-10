@@ -1,10 +1,16 @@
 nums = [5,7,8,4,1,6,9,2]
 n = len(nums)
 
-for i in range(n-2, -1, -1):
-    for j in range(0,i+1):
-        if nums[j]>nums[j+1]:
+for i in range(n-1, -1, -1):
+    isSwapped =  False
+
+    for j in range(i):
+        if nums[j] > nums[j+1]:
             nums[j], nums[j+1] = nums[j+1], nums[j]
 
-        
+        isSwapped = True
+
+    if not isSwapped:
+        break
+
 print(nums)
