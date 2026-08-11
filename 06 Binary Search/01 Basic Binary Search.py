@@ -1,5 +1,4 @@
 #Iterative Solution for Binary Search
-
 def BinarySearch(nums, target):
     n = len(nums)
     low = 0
