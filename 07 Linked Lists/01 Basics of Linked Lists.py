@@ -13,6 +13,9 @@ node2.next = node3
 node3.next = node4
 
 print("Node address:", node1)
+print("Node address:", node2)
+print("Node address:", node3)
+print("Node address:", node4)
 print("Node value:", node1.val)
 print("Node next address:", node1.next)
 print("Node next value:", node1.next.val)
