@@ -27,3 +27,5 @@ while fast != None and fast.next != None:
         return slow
     
 return None
+
+#Revised this finally 
