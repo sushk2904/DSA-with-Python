@@ -15,3 +15,6 @@ while elements:
     maxm = max(front+back, maxm)
 
 print(maxm)
+
+
+#Tried this question with a different approach
