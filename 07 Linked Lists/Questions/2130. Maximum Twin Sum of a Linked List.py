@@ -9,12 +9,3 @@ while curr != None:
     elements.append(curr.val)
     curr = curr.next
 
-while elements:
-    front = elements.pop()
-    back = elements.popleft()
-    maxm = max(front+back, maxm)
-
-print(maxm)
-
-
-#Tried this question with a different approach
