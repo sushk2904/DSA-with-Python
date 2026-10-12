@@ -35,3 +35,8 @@ and false if one is false'''
 and true if one is true'''
 
 #XOR Gate 
+""" No of 1's is even toh 0 aata hai 
+and No of 1's is odd toh 1 aajata hai
+
+a^a = 0 
+"""
