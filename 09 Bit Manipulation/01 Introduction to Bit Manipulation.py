@@ -10,6 +10,7 @@ def convert2binary(num:int)->str:
             result+="0"
         num//2
     result = result [::-1]
+    print(result)
 
 def convert2decimal(x:str)->int:
 
@@ -17,7 +18,11 @@ def convert2decimal(x:str)->int:
     power = 0
     index = len(x)-1
     while index >= 0:
-        num = int(x[index])*(2)
+        num = int(x[index])*(2**power)
+        power+=1
+        index-=1
+        decimal_number+num
+    print(decimal_number)
 
 
 
