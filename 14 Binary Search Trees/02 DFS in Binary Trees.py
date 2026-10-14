@@ -52,3 +52,6 @@ def inorder_traversal(node):
     preorder_traversal(node.left)
     
 inorder_traversal(five)
+
+
+#Revised this will keep studying this 
