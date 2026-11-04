@@ -9,6 +9,21 @@ def height(node):
 
 #BFS Method
 
+from collections import deque
 
-he
+height = 0 
+queue = deque([root])
+
+while queue:
+    level_len = len(queue)
+    
+    for _ in range(level_len):
+        node = queue.popleft
+        if node.left is not None:
+            queue.append(node.left)
+        if node.right is not None:
+            queue.append(node.right)
+    height+=1
+
+print(height)
 
