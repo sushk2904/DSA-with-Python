@@ -1,5 +1,8 @@
 from collections import deque
 
+
+#The code works finally 
+
 def isSymmetric(self, root: TreeNode | None) -> bool:
     if not root:
         return True
